@@ -4,7 +4,7 @@ const getImgCaptcha = {
 }
 
 const rqs = {
-  code: 200,
+  rtncode: 200,
   data: getImgCaptcha
 }
 

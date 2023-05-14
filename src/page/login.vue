@@ -37,7 +37,7 @@
               <el-input
                 @keyup.enter.native="submitForm('loginForm')"
                 class="area"
-                type="password"
+                type="text"
                 placeholder="验证码"
                 v-model="loginForm.captcha"
               >

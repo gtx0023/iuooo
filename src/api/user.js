@@ -3,7 +3,7 @@ import request from '@/utils/axios'
 export function login(params) {
   return request({
     url: '/user/login',
-    method: 'get',
+    method: 'post',
     data: params
   })
 }
@@ -18,7 +18,7 @@ export function logout(params) {
 export function getUserInfo(params) {
   return request({
     url: '/user/info/get',
-    method: 'get',
+    method: 'post',
     data: params
   })
 }
@@ -26,7 +26,7 @@ export function getUserInfo(params) {
 export function getUserList(reqData) {
   return request({
     url: '/user/list/get',
-    method: 'get',
+    method: 'post',
     data: reqData
   })
 }
