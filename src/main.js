@@ -9,7 +9,7 @@ import('element-ui/lib/theme-chalk/index.css')
 
 import './components/iconSvg'
 
-// import '@/permission' // permission control
+import '@/permission' // permission control
 
 import '@/mockjs' //  mock数据
 

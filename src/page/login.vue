@@ -100,8 +100,7 @@ export default {
     submitForm(loginForm) {
       this.$refs[loginForm].validate((valid) => {
         if (valid) {
-          const userinfo = this.loginForm
-          login(userinfo).then((res) => {
+          login(this.loginForm).then((res) => {
             console.log('res', res)
             const userList = res.data.userList
             setToken('Token', userList.token)
