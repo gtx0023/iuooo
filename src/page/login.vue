@@ -102,8 +102,7 @@ export default {
         if (valid) {
           login(this.loginForm).then((res) => {
             console.log('res', res)
-            const userList = res.data.userList
-            setToken('Token', userList.token)
+            setToken('Token', res.authorisation.token)
             this.$router.push({ path: '/' })
             this.$store.dispatch('initLeftMenu') // 设置左边菜单始终为展开状态
           })
